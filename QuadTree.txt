@@ -1,0 +1,6 @@
+Divide face - store in face array
+Loop through array and generate using ConstructMesh() in GenerateMesh() in Planet.cs
+Decide resolution of mesh based on distance to player - Calculated in the TerrainFace.cs?
+Take into account planet radius? Make sure to normalise
+
+Maybe try checking if face is within view/line of sight
