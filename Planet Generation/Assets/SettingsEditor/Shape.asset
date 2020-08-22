@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721f878d2a1c7d944b89af5ac3342668, type: 3}
   m_Name: Shape
   m_EditorClassIdentifier: 
-  planetRadius: 100
+  planetRadius: 200
   noiseLayers:
   - enabled: 1
     useFirstLayerAsMask: 1
     noiseSettings:
       filterType: 0
       simpleNoiseSettings:
-        strength: 0.02
+        strength: 0.009
         numLayers: 8
-        baseRoughness: 0.55
+        baseRoughness: 0.66
         roughness: 2.31
-        persistence: 0.48
+        persistence: 0.51
         center: {x: 0, y: 0, z: 0}
         minValue: 1.15
       ridgidNoiseSettings:
@@ -35,8 +35,8 @@ MonoBehaviour:
         center: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 0.8
-  - enabled: 1
-    useFirstLayerAsMask: 0
+  - enabled: 0
+    useFirstLayerAsMask: 1
     noiseSettings:
       filterType: 1
       simpleNoiseSettings:
@@ -48,15 +48,15 @@ MonoBehaviour:
         center: {x: 0, y: 0, z: 0}
         minValue: 2.83
       ridgidNoiseSettings:
-        strength: 0.21
+        strength: 1.21
         numLayers: 8
-        baseRoughness: 0.62
-        roughness: 7.15
-        persistence: 0.22
+        baseRoughness: 0.83
+        roughness: 6.97
+        persistence: 0.84
         center: {x: 0, y: 0, z: 0}
-        minValue: 0.82
-        weightMultiplier: 0.8
-  - enabled: 1
+        minValue: 7.56
+        weightMultiplier: 1.81
+  - enabled: 0
     useFirstLayerAsMask: 1
     noiseSettings:
       filterType: 1
@@ -69,11 +69,53 @@ MonoBehaviour:
         center: {x: 0, y: 0, z: 0}
         minValue: 0
       ridgidNoiseSettings:
-        strength: 1.37
+        strength: 12.77
         numLayers: 8
-        baseRoughness: 3.86
-        roughness: 2.07
-        persistence: 1.39
+        baseRoughness: 4.18
+        roughness: 3.19
+        persistence: 0.7
         center: {x: 0, y: 1.5, z: 0}
+        minValue: 0.32
+        weightMultiplier: 0.8
+  - enabled: 0
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistence: 0.5
+        center: {x: 0, y: 0, z: 0}
         minValue: 0
+      ridgidNoiseSettings:
+        strength: 1.13
+        numLayers: 8
+        baseRoughness: 4.18
+        roughness: 3.19
+        persistence: 0.7
+        center: {x: 0, y: 1.5, z: 0}
+        minValue: 0.32
+        weightMultiplier: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: -0.12
+        numLayers: 8
+        baseRoughness: 1.55
+        roughness: 2
+        persistence: 0.5
+        center: {x: 0.83, y: 0, z: 0}
+        minValue: -0.5
+      ridgidNoiseSettings:
+        strength: 12.77
+        numLayers: 8
+        baseRoughness: 4.18
+        roughness: 3.19
+        persistence: 0.7
+        center: {x: 0, y: 1.5, z: 0}
+        minValue: 0.32
         weightMultiplier: 0.8
