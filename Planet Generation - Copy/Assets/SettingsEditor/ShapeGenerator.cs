@@ -6,10 +6,11 @@ public class ShapeGenerator
 {
     ShapeSettings settings = new ShapeSettings();
     INoiseFilter[] noiseFilters = new INoiseFilter[0];
-    public MinMax elevationMinMax;
+    public MinMax elevationMinMax = null;
 
-    public void UpdateSettings(ref ShapeSettings settings)
+    public void UpdateSettings(ShapeSettings settings)
     {
+        Debug.Log("UpdateSettings");
         this.settings = settings;
         noiseFilters = new INoiseFilter[settings.noiseLayers.Length];
         for (int i = 0; i < noiseFilters.Length; i++)
@@ -21,6 +22,7 @@ public class ShapeGenerator
 
     public Vector3 CalculatePointOnPlanet(Vector3 pointOnUnitSphere)
     {
+        Debug.Log("CalculatePointOnPlanet");
         float firstLayerValue = 0;
         float elevation = 0;
 

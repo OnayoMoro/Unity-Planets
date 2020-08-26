@@ -8,7 +8,7 @@ public class ColourGenerator
     Texture2D texture;
     const int textureResolution = 50;
 
-    public void UpdateSettings(ref ColourSettings settings)
+    public void UpdateSettings(ColourSettings settings)
     {
         this.settings = settings;
         if (texture == null)

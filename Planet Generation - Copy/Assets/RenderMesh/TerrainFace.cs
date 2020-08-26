@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TerrainFace
 {
-    float radius;
+    float radius = 100f;
     Mesh mesh;
     int resolution;
     Vector3 localUp;

@@ -82,7 +82,7 @@ public class Chunk
     public (Vector3[], int[]) CalculateVerticiesAndTriangles(int triangleOffset)
     {
         Debug.Log("Calculate Verticies and Triangles");
-        int planetRadius = 1;
+        int planetRadius = 100;
         int resolution = 8;
         Vector3[] vertices = new Vector3[resolution*resolution];
         int[] triangles = new int[(resolution-1)*(resolution-1)*6];   //E.g. resolution = 4, faces = (resolution-1)squared, triangles = (faces)*2, vertices = (triangles)*3
@@ -98,6 +98,7 @@ public class Chunk
                 Vector3 pointOnUnitCube = localUp + ((percent.x - .5f) * 2 * axisA + (percent.y - .5f) * 2 * axisB) * planetRadius;
                 Vector3 pointOnUnitSphere = pointOnUnitCube.normalized * planetRadius;
                 vertices[i] = shapeGenerator.CalculatePointOnPlanet(pointOnUnitSphere);
+                Debug.Log("Got Verticies");
 
                 //Don't draw past the last vertices
                 if (x!=resolution-1&&y!=resolution-1)       

@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
-    public GameObject player;   
+    public static GameObject player;   
     //Create 6 mesh filters for displaying terrain faces
     [Range(2,256)]
     public int resolution;
-    public static int size = 1;
+    public static int size = 100;
     public bool autoUpdate = true;
     public enum FaceRenderMask {All, Top, Bottom, Left, Right, Front, Back};
     public FaceRenderMask faceRenderMask;
 
-    public ShapeSettings shapeSettings;
-    public ColourSettings colourSettings;
+    public ShapeSettings shapeSettings = new ShapeSettings();
+    public ColourSettings colourSettings = new ColourSettings();
 
     [HideInInspector]
     public bool shapeSettingsFoldout;
     [HideInInspector]
     public bool colourSettingsFoldout;
 
-    ShapeGenerator shapeGenerator = new ShapeGenerator();
-    ColourGenerator colourGenerator = new ColourGenerator();
+    ShapeGenerator shapeGenerator;
+    ColourGenerator colourGenerator;
 
     Chunk  chunk;
 
@@ -37,7 +37,7 @@ public class Planet : MonoBehaviour
         
 
         GeneratePlanet();
-        //Debug.Log(Vector3.Distance(position.normalized * shapeSettings.planetRadius, Planet.player.position));
+        //Debug.Log(Vector3.Distance(position.normalized * shapeSettings.planetRadius, player.transform.position));
 
         StartCoroutine(PlanetGenerationLoop());
     }
@@ -70,8 +70,8 @@ public class Planet : MonoBehaviour
     void Initialise()
     {
         Debug.Log("Initialise");
-        shapeGenerator.UpdateSettings(ref shapeSettings);
-        colourGenerator.UpdateSettings(ref colourSettings);
+        shapeGenerator.UpdateSettings(shapeSettings);
+        colourGenerator.UpdateSettings(colourSettings);
 
         if (meshfilters == null || meshfilters.Length == 0)
         {
