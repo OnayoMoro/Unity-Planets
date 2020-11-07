@@ -1,0 +1,51 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileSnippet
+  api=4 type=1 insize=16577 outsize=902 kw=_SUNDISK_SIMPLE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18731 outsize=10338 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1864 outsize=561 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1602 outsize=2002 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1602 outsize=7294 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH _EMISSION pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=4528 outsize=2864 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9809 outsize=7389 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4823 outsize=3427 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=14139 outsize=1100 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11086 outsize=4742 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40264 outsize=35783 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=8511 outsize=6716 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22295 outsize=15194 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9735 outsize=8301 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6119 outsize=2055 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=6745 outsize=4889 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9103 outsize=2140 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=48644 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=47885 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=50897 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=72599 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3922 outsize=4173 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
