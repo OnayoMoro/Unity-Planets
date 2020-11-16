@@ -18,18 +18,18 @@ MonoBehaviour:
     key1: {r: 0.45692417, g: 0.62241435, b: 0.6415094, a: 1}
     key2: {r: 0.54249734, g: 0.6714813, b: 0.6886792, a: 0}
     key3: {r: 1, g: 1, b: 1, a: 0}
-    key4: {r: 1, g: 1, b: 1, a: 0}
-    key5: {r: 1, g: 1, b: 1, a: 0}
-    key6: {r: 1, g: 1, b: 1, a: 0}
-    key7: {r: 1, g: 1, b: 1, a: 0}
+    key4: {r: 3.5, g: 2, b: 0.5, a: 0}
+    key5: {r: 12, g: 10, b: 2.5, a: 0}
+    key6: {r: 4, g: 3.5, b: 1.2, a: 0}
+    key7: {r: 12, g: 10, b: 2.5, a: 0}
     ctime0: 6782
     ctime1: 25828
     ctime2: 34581
     ctime3: 61592
-    ctime4: 61592
-    ctime5: 50945
-    ctime6: 50945
-    ctime7: 50945
+    ctime4: 40733
+    ctime5: 58358
+    ctime6: 58982
+    ctime7: 65535
     atime0: 0
     atime1: 65535
     atime2: 0
