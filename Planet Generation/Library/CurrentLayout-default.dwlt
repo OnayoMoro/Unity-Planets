@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 10}
-  m_MinSize: {x: 875, y: 421}
+  m_MinSize: {x: 875, y: 442}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -122,8 +122,8 @@ MonoBehaviour:
     y: 0
     width: 1209
     height: 957
-  m_MinSize: {x: 231, y: 371}
-  m_MaxSize: {x: 10001, y: 14021}
+  m_MinSize: {x: 231, y: 392}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 114
 --- !u!114 &6
@@ -222,8 +222,8 @@ MonoBehaviour:
     y: 0
     width: 1209
     height: 686
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -253,7 +253,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1007
-  m_MinSize: {x: 875, y: 421}
+  m_MinSize: {x: 875, y: 442}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &11
 MonoBehaviour:
@@ -318,8 +318,8 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 957
-  m_MinSize: {x: 810, y: 371}
-  m_MaxSize: {x: 22005, y: 14021}
+  m_MinSize: {x: 811, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
   controlID: 112
 --- !u!114 &14
@@ -344,8 +344,8 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 957
-  m_MinSize: {x: 810, y: 371}
-  m_MaxSize: {x: 22005, y: 14021}
+  m_MinSize: {x: 811, y: 392}
+  m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
   controlID: 113
 --- !u!114 &15
@@ -367,8 +367,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -464,9 +464,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2148.4985, y: -932.0142, z: -3957.3276}
+    m_Target: {x: -2276.5823, y: -235.80669, z: -3841.9822}
     speed: 2
-    m_Value: {x: -2148.4985, y: -932.0142, z: -3957.3276}
+    m_Value: {x: -2276.5823, y: -235.80669, z: -3841.9822}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -514,11 +514,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.10202731, y: 0.5015726, z: -0.05972839, w: -0.8570114}
     speed: 2
-    m_Value: {x: -0.10202627, y: 0.5015675, z: -0.05972778, w: -0.8570026}
+    m_Value: {x: -0.10202731, y: 0.5015726, z: -0.05972839, w: -0.8570114}
   m_Size:
-    m_Target: 2041.5675
+    m_Target: 965.1104
     speed: 2
-    m_Value: 1953.6531
+    m_Value: 923.55066
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -603,7 +603,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -711,19 +711,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Planet_2/SettingsEditor
+    - Assets/EffectExamples
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Planet_2/SettingsEditor
+  - Assets/EffectExamples
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\onayo\Documents\GitHub\Unity-Planets\Planet Generation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 458}
-    m_SelectedIDs: 7c460000
-    m_LastClickedID: 18044
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: 00460000
+    m_LastClickedID: 17920
     m_ExpandedIDs: 00000000e0450000e2450000e4450000e6450000e8450000ea450000ec450000ee450000f0450000f2450000f4450000f6450000f8450000fa450000fc450000fe450000004600000246000004460000064600000846000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -863,8 +863,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 94440000
-      m_LastClickedID: 17556
+      m_SelectedIDs: 8a440000
+      m_LastClickedID: 17546
       m_ExpandedIDs: 6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
