@@ -27,9 +27,9 @@
 //     // Update is called once per frame
 //     void Update()
 //     {
-//         if (PlayerBasicControll.grounded == true){
-//             Debug.Log("Object Name: " + PlayerBasicControll.RaycastReturn);
-//             if (PlayerBasicControll.RaycastReturn.Contains("mesh")){
+//         if (PlayerBasicControl.grounded == true){
+//             Debug.Log("Object Name: " + PlayerBasicControl.RaycastReturn);
+//             if (PlayerBasicControl.RaycastReturn.Contains("mesh")){
 
 //                 // need to change way to find parent object
 //                 string currentObject = "Planet";

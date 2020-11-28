@@ -12,6 +12,8 @@ public class Attractor : MonoBehaviour {
 
 	public Rigidbody rb;
 
+	bool planet_ting;
+
 	void FixedUpdate ()
 	{
 		foreach (Attractor attractor in Attractors)
@@ -21,12 +23,16 @@ public class Attractor : MonoBehaviour {
 		}
 	}
 
-	void OnEnable ()
+	void OnEnable()
 	{
+		//planet_ting = Attractors.ToString().Contains("Planet");
 		if (Attractors == null)
 			Attractors = new List<Attractor>();
 
-		Attractors.Add(this);
+		planet_ting = rb.gameObject.name.Contains("Planet");
+
+		if (planet_ting)
+			Attractors.Add(this);
 	}
 
 	void OnDisable ()
@@ -47,14 +53,21 @@ public class Attractor : MonoBehaviour {
 		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
 		Vector3 force = direction.normalized * forceMagnitude;
 
-		rbToAttract.AddForce(force);
+		
 
 		//Inverse square law
-		ISLdistance = Vector3.Distance(rb.position, objToAttract.transform.position);
+
+		// ISLdistance = Vector3.Distance(rb.position, objToAttract.transform.position);
+
 		//Debug.Log("Old Force: " + force);
-		force = force * (1/(ISLdistance*ISLdistance));
+
+		// force = force * (1/(ISLdistance*ISLdistance));
+
 		//Debug.Log("New Force: " + force);
+
 		//Debug.Log("Distance: " + ISLdistance);
+		
+		this.rb.AddForce(force*-1);//Move this its meant to go last
 	}
 
 }
