@@ -44,7 +44,7 @@ public class Interaction : MonoBehaviour
         {
             Vector3 moveCamTo_pos = Ship.transform.localPosition - Ship.transform.forward * 20f + Ship.transform.up * 5f;
 
-            float bias = .90f;
+            float bias = .96f;
 
             Camera.transform.position = Camera.transform.position * bias + moveCamTo_pos * (1f - bias);
             Camera.transform.LookAt(Ship.transform.localPosition + Ship.transform.up * 10f + Ship.transform.forward + Ship.transform.right);

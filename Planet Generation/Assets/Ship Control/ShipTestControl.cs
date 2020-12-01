@@ -12,8 +12,10 @@ public class ShipTestControl : MonoBehaviour
     public float mouseSensitivityY = 1f;
     Transform cameraTransform;
 
-    float mousePosX = 0;
-    float mousePosY = 0;
+    public float mousePosX = 0;
+    public float mousePosY = 0;
+
+    public float deadzone = 2f;
 
     void Awake()
     {
@@ -37,9 +39,15 @@ public class ShipTestControl : MonoBehaviour
         mousePosX = Input.GetAxis("Mouse X") + mousePosX /** mouseSensitivityX*/;
         mousePosY = -Input.GetAxis("Mouse Y") + mousePosY /** mouseSensitivityY*/;
 
+        // Limit maneuverability
         if (mousePosX > 160) { mousePosX = 160; }
         else if (mousePosX < -160) { mousePosX = -160; }
 
+        // Mouse deadzone
+        if (mousePosX < deadzone && mousePosX > -deadzone) { mousePosX = 0; }
+        if (mousePosY < deadzone && mousePosY > -deadzone) { mousePosY = 0; }
+
+        // Limit manuverability
         if (mousePosY > 160) { mousePosY = 160; }
         else if (mousePosY < -160) { mousePosY = -160; }
 
@@ -50,49 +58,49 @@ public class ShipTestControl : MonoBehaviour
         //transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * mouseSensitivityX * Time.deltaTime *.017f);
         //transform.Rotate(Vector3.right * -Input.GetAxis("Mouse Y") * mouseSensitivityY * Time.deltaTime *.017f);
 
-        //Move ship up
+        // Move ship up
         if (Input.GetKey(KeyCode.Space))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.up * 10000);
         }
 
-        //Move ship down
+        // Move ship down
         if (Input.GetKey(KeyCode.LeftControl))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.up * -10000);
         }
 
-        //Move ship forward 
+        // Move ship forward 
         if (Input.GetKey(KeyCode.W))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.forward * 50000);
         }
 
-        //Move ship backwards
+        // Move ship backwards
         if (Input.GetKey(KeyCode.S))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.forward * -50000);
         }
-
-        //Strafe ship left
+         
+        // Strafe ship left
         if (Input.GetKey(KeyCode.A))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.right * -10000);
         }
 
-        //Strafe ship right
+        // Strafe ship right
         if (Input.GetKey(KeyCode.D))
         {
             Ship.GetComponent<Rigidbody>().AddForce(transform.right * 10000);
         }
 
-        //Rotate ship right
+        // Rotate ship right
         if (Input.GetKey(KeyCode.E))
         {
             Ship.GetComponent<Rigidbody>().AddTorque(transform.forward * -3000);
         }
 
-        //Rotate ship right
+        // Rotate ship right
         if (Input.GetKey(KeyCode.Q))
         {
             Ship.GetComponent<Rigidbody>().AddTorque(transform.forward * 3000f);
